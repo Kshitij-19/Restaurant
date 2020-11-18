@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.res_t2.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_restaurant"
+        android:name="com.example.res_t2.ui.Restaurant.RestaurantFragment"
+        android:label="@string/restaurant"
+        tools:layout="@layout/fragment_restaurant" />
+
+    <fragment
+        android:id="@+id/navigation_rooms"
+        android:name="com.example.res_t2.ui.Rooms.RoomsFragment"
+        android:label="@string/rooms"
+        tools:layout="@layout/fragment_rooms" />
+
+    <fragment
+        android:id="@+id/navigation_bookingStatus"
+        android:name="com.example.res_t2.ui.bookingStatus.BookingStatusFragment"
+        android:label="@string/BookingStatus"
+        tools:layout="@layout/fragment_booking_status" />
+</navigation>
