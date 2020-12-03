@@ -34,7 +34,7 @@ public class room3 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 int nop = Integer.parseInt(t3.getText().toString().trim());
-                int cost = 120 * nop;
+                int cost = 220 * nop;
                 String phn = t6.getText().toString().trim();
                 String indte = t4.getText().toString().trim();
                 String outdte = t5.getText().toString().trim();
@@ -46,7 +46,7 @@ public class room3 extends AppCompatActivity {
                 rm.setUsername(usrname);
                 rm.setIndate(indte);
                 rm.setOutdate(outdte);
-                rm.setTor("Comfort Suite");
+                rm.setTor("Family Suite");
                 rm.setPhno(phn);
 
                 reff.push().setValue(rm);
