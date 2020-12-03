@@ -1,35 +1,59 @@
 package com.example.res_t2.ui.Rooms;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
+import android.widget.Button;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProvider;
 
 import com.example.res_t2.R;
 
 public class RoomsFragment extends Fragment {
 
-    private RoomsViewModel roomsViewModel;
+    private Button btn1, btn2, btn3;
+    
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View rootView = inflater.inflate(R.layout.fragment_rooms, container, false);
+        btn1 = (Button) getView().findViewById(R.id.button1room);
+        btn2 = (Button) getView().findViewById(R.id.button2room);
+        btn3 = (Button) getView().findViewById(R.id.button3room);
 
-    public View onCreateView(@NonNull LayoutInflater inflater,
-                             ViewGroup container, Bundle savedInstanceState) {
-        roomsViewModel =
-                new ViewModelProvider(this).get(RoomsViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_rooms, container, false);
-        final TextView textView = root.findViewById(R.id.text_rooms);
-        roomsViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        btn1.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), room1.class);
+                startActivity(intent);
+
+            }
+
+
+        });
+
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), room2.class);
+                startActivity(intent);
+
             }
         });
-        return root;
+
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), room3.class);
+                startActivity(intent);
+
+
+
+            }
+        });
+
+        return rootView;
     }
+
 }
