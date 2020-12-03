@@ -9,10 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Res_t2">
-        <activity android:name=".ui.authentication.Register"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".ui.authentication.Login"
-            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".ui.Rooms.room3"></activity>
+        <activity android:name=".ui.Rooms.room2" />
+        <activity android:name=".ui.Rooms.room1" />
+        <activity
+            android:name=".ui.authentication.Register"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.authentication.Login"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
