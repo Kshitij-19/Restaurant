@@ -18,9 +18,9 @@ public class RoomsFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_rooms, container, false);
-        btn1 = (Button) getView().findViewById(R.id.button1room);
-        btn2 = (Button) getView().findViewById(R.id.button2room);
-        btn3 = (Button) getView().findViewById(R.id.button3room);
+        btn1 = (Button) rootView.findViewById(R.id.button1room);
+        btn2 = (Button) rootView.findViewById(R.id.button2room);
+        btn3 = (Button) rootView.findViewById(R.id.button3room);
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override

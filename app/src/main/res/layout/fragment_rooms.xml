@@ -7,14 +7,6 @@
     tools:context=".ui.Rooms.RoomsFragment">
 
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="#289F24"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
-        app:title="Dinner Club" />
 
 
     <LinearLayout
@@ -247,21 +239,5 @@
 
 
     </LinearLayout>
-
-    <androidx.appcompat.widget.Toolbar
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="#289F24"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
-        app:title="Dinner Club" />
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_nav_view"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_alignParentBottom="true"
-        android:background="?android:attr/windowBackground"
-        app:menu="@menu/bottom_nav_menu" />
 
 </RelativeLayout>
